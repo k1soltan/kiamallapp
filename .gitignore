@@ -1,3 +1,20 @@
+# Ignore all .env files
 .env
-node_modules
-vendor
+
+# Ignore log files
+*.log
+
+# Ignore vendor directory (PHP projects)
+vendor/
+
+# Ignore node_modules directory (JavaScript/Node.js projects)
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore IDE and OS-specific files
+*.swp
+.DS_Store
+Thumbs.db
