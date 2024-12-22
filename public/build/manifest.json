@@ -1,0 +1,49 @@
+{
+  "_index-BvXCc8R3.js": {
+    "file": "assets/index-BvXCc8R3.js",
+    "name": "index"
+  },
+  "public/assets/fonts/YekanBakhFaNum-Bold.woff2": {
+    "file": "assets/YekanBakhFaNum-Bold-CMNT45Oa.woff2",
+    "src": "public/assets/fonts/YekanBakhFaNum-Bold.woff2"
+  },
+  "public/assets/fonts/YekanBakhFaNum-Light.woff2": {
+    "file": "assets/YekanBakhFaNum-Light-DgqLRYtF.woff2",
+    "src": "public/assets/fonts/YekanBakhFaNum-Light.woff2"
+  },
+  "public/assets/fonts/YekanBakhFaNum-Regular.woff2": {
+    "file": "assets/YekanBakhFaNum-Regular-B4cV0wVW.woff2",
+    "src": "public/assets/fonts/YekanBakhFaNum-Regular.woff2"
+  },
+  "public/assets/fonts/YekanBakhFaNum-SemiBold.woff2": {
+    "file": "assets/YekanBakhFaNum-SemiBold-C4JCeP6F.woff2",
+    "src": "public/assets/fonts/YekanBakhFaNum-SemiBold.woff2"
+  },
+  "public/assets/images/conference.jpg": {
+    "file": "assets/conference-hrhU6H7x.jpg",
+    "src": "public/assets/images/conference.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BXo_ogsC.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BbpBINBF.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_index-BvXCc8R3.js"
+    ]
+  },
+  "resources/js/calendar.js": {
+    "file": "assets/calendar-DCn9mxS7.js",
+    "name": "calendar",
+    "src": "resources/js/calendar.js",
+    "isEntry": true,
+    "imports": [
+      "_index-BvXCc8R3.js"
+    ]
+  }
+}

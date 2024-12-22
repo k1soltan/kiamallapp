@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[x-cloak] {
+    display: none;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('/public/assets/fonts/YekanBakhFaNum-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('/public/assets/fonts/YekanBakhFaNum-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('/public/assets/fonts/YekanBakhFaNum-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('/public/assets/fonts/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+/* Ensure all buttons are square and responsive */
+.square-btn {
+    background-color: #e5e7eb; /* Light gray for light mode */
+    color: #a2762b; /* Dark gray for text in light mode */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem; /* Rounded corners */
+    font-weight: 600; /* Bold font */
+    transition: background-color 0.2s ease-in-out;
+    aspect-ratio: 1; /* Make the button square */
+    width: 100%; /* Full width of grid cell */
+}
+
+.square-btn:hover {
+    background-color: #d1d5db; /* Slightly darker gray */
+}
+
+.dark .square-btn {
+    background-color: #a2762b; /* Dark background for dark mode */
+    color: white; /* White text for dark mode */
+}
+
+.dark .square-btn:hover {
+    background-color: #a2762b; /* Slightly lighter dark gray */
+}
+
+/* Ensure the grid always has 4 columns */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 0.5rem; /* Space between buttons */
+}
+
+
+
+/* Container for horizontal scrolling */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Space between cards */
+    padding-bottom: 1rem; /* Padding for a better scroll experience */
+    scroll-snap-type: x mandatory; /* Smooth snapping for horizontal scrolling */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #83828200;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%; /* Ensure card takes full width of the slide */
+    height: auto; /* Adjust height based on content */
+}
+
+/* Swiper Styling */
+.swiper-container {
+    position: relative;
+    padding-bottom: 2rem; /* Add space below for pagination dots */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background-color: #a2762b; /* Dark gray */
+    opacity: 1;
+}
+
+:root {
+    --swiper-pagination-color: #a2762b; /* Your desired color */
+
+    .dark\:bg-gray-200:is(.dark *) {
+        FONT-WEIGHT: 800;
+        --tw-bg-opacity: 1;
+        background-color: #a2762b;
+    }
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #a2762b; /* Dark gray */
+    opacity: 1;
+}
+.dark .swiper-pagination-bullet-active {
+    background: #a2762b; /* Dark gray */
+    opacity: 1;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 0; /* Place pagination at the bottom of the Swiper container */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+/* Button styles (for square buttons) */
+.square-btn {
+    background-color: #e5e7eb;
+    color: #2e2e2ede;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    aspect-ratio: 1;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.square-btn:hover {
+    background-color: #d1d5db;
+}
+
+.dark .square-btn {
+    background-color: #404040;
+    color: white;
+}
+
+.dark .square-btn:hover {
+    background-color: #525252;
+}
+
+.dark .card {
+    background-color: #22212100;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%; /* Ensure card takes full width of the slide */
+    height: auto; /* Adjust height based on content */
+}
+
+
