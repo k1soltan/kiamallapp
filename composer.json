@@ -17,7 +17,8 @@
         "mobiledetect/mobiledetectlib": "^4.8",
         "morilog/jalali": "^3.4",
         "setasign/fpdf": "^1.8",
-        "spatie/laravel-permission": "^6.10"
+        "spatie/laravel-permission": "^6.10",
+        "tzsk/sms": "^8.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
